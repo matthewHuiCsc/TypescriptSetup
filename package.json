@@ -1,0 +1,40 @@
+{
+  "name": "typescript-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest",
+    "setup": "./scripts/tsc-setup.sh",
+    "react-tsc": "tsc install --save react react-dom"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "~17.0.3",
+    "react-test-renderer": "~15.4.0",
+    "ts-jest": "~17.0.0",
+    "ts-loader": "~1.2.2",
+    "typescript": "~2.0.10",
+    "typings": "~2.0.0",
+    "webpack": "~1.13.3",
+    "webpack-notifier": "~1.4.1"
+  },
+  "dependencies": {
+    "react": "~15.4.0",
+    "react-dom": "~15.4.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
