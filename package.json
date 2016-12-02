@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack",
-    "test": "jest",
+    "test": "./scripts/run-tests.sh",
+    "_test": "jest",
     "setup": "./scripts/tsc-setup.sh",
     "react-tsc": "tsc install --save react react-dom"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/react-test-renderer": "~15.4.0",
     "jest": "~17.0.3",
     "react-test-renderer": "~15.4.0",
     "ts-jest": "~17.0.0",

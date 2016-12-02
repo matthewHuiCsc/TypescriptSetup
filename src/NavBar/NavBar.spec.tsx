@@ -6,7 +6,7 @@ import * as React from 'react';
 import { NavBar } from './NavBar';
 
 /* Wha? Why do I need to use a require in this case instead? */
-let renderer = require('react-test-renderer');
+import * as renderer from 'react-test-renderer';
 
 test('NavBar renders correctly', () => {
   const tree = renderer.create(
